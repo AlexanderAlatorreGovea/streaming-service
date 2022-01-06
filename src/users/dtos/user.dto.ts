@@ -1,18 +1,11 @@
-import { IsEmail, IsNumber, IsString } from 'class-validator';
+import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
 
 export class User {
-  @IsNumber()
-  id: number;
-
   @IsEmail()
+  @IsString()
   email: string;
 
-  @IsString()
-  username: string;
-
-  @IsString()
-  confirmPassword: string;
-
+  @IsNotEmpty()
   @IsString()
   password: string;
 }
