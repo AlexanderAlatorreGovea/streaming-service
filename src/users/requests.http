@@ -6,3 +6,6 @@ content-type: application/json
   "email": "test50@test.com",
   "password": "123454"
 }
+
+### Create a new user
+GET http://localhost:3000/users/1
